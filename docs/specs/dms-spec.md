@@ -179,6 +179,7 @@ Erros:
 - `repositories/`: mantém metadados em memória e usa o filesystem local
 - Multer deve usar `diskStorage` e gravar exclusivamente em `backend/storage`
 - A pasta pode ser definida por variável de ambiente, mantendo `backend/storage` como padrão
+- `STORAGE_DIR` define a pasta de armazenamento; `MAX_FILE_SIZE_BYTES` define opcionalmente o tamanho máximo do arquivo em bytes
 
 Fluxo de dependência: `routes -> controllers -> services -> repositories`.
 
